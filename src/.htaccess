@@ -1,0 +1,35 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} !^www\.jan-grosser\.de$ [NC]
+RewriteRule ^(.*)$ http://www.jan-grosser.de/$1 [L,R=301]
+
+RewriteCond %{QUERY_STRING} ^77a84481260017b36f966dcf9dee34ff=73f4a29e43ecc926e62bb68bf516624b&start=95$ [NC]
+RewriteRule ^home http://www.jan-grosser.de/art/232_hugin-opensource-panorama-tool.html? [L,R=301]
+
+#RewriteCond %{QUERY_STRING} ^77a84481260017b36f966dcf9dee34ff=44f817cf6b8770e5ad31e25c9e2e8b20&start=110$ NC
+#RewriteRule ^home http://www.jan-grosser.de/art/218_alte_ssh_host_keys_aus_der_dat.html [L,R=301]
+#RewriteCond %{QUERY_STRING} ^77a84481260017b36f966dcf9dee34ff=0806a62d67a9a5c97180d6bf0066c3f5&start=110$ NC
+#RewriteRule ^home http://www.jan-grosser.de/art/218_alte_ssh_host_keys_aus_der_dat.html [L,R=301]
+#RewriteCond %{QUERY_STRING} ^77a84481260017b36f966dcf9dee34ff=ef2bece6ff315bcd608ffe0f676c7ff6&start=170$ NC
+#RewriteRule ^home http://www.jan-grosser.de/art/155_die-meisen-hatten-besuch.html [L,R=301]
+#RewriteCond %{QUERY_STRING} ^77a84481260017b36f966dcf9dee34ff=99623cf596fd1050ee309dc04565a333&start=170$ NC
+#RewriteRule ^home http://www.jan-grosser.de/art/155_die-meisen-hatten-besuch.html [L,R=301]
+#RewriteCond %{QUERY_STRING} ^77a84481260017b36f966dcf9dee34ff=73f4a29e43ecc926e62bb68bf516624b&start=175$ NC
+#RewriteRule ^home http://www.jan-grosser.de/art/150_datumsformat-in-joomla-aendern.html [L,R=301]
+#RewriteCond %{QUERY_STRING} ^77a84481260017b36f966dcf9dee34ff=99623cf596fd1050ee309dc04565a333&start=215$ NC
+#RewriteRule ^home http://www.jan-grosser.de/art/98_windows-tool-pfad-in-zwischena.html [L,R=301]
+#RewriteCond %{QUERY_STRING} ^77a84481260017b36f966dcf9dee34ff=ebaf4dab87e63363c30b9e28ea3adbee&start=265$ NC
+#RewriteRule ^home http://www.jan-grosser.de/art/45_jungfernfahrt-der-ferngesteuer.html [L,R=301]
+#RewriteCond %{QUERY_STRING} ^77a84481260017b36f966dcf9dee34ff=686dc6cfac9f4c256904dcea6db529b4&start=105$ NC
+#RewriteRule ^home http://www.jan-grosser.de/art/220_horstbox-login-und-referrer.html [L,R=301]
+#RewriteCond %{QUERY_STRING} ^77a84481260017b36f966dcf9dee34ff=73f4a29e43ecc926e62bb68bf516624b&start=105$ NC
+#RewriteRule ^home http://www.jan-grosser.de/art/220_horstbox-login-und-referrer.html [L,R=301]
+#RewriteCond %{QUERY_STRING} ^77a84481260017b36f966dcf9dee34ff=ef2bece6ff315bcd608ffe0f676c7ff6&start=190$ NC
+#RewriteRule ^home http://www.jan-grosser.de/art/133_blaumeisen-sammeln-eifrig-nist.html [L,R=301]
+
+#Redirect permanent "/internet/37-nette-fundsachen/180-dont-be-evil" http://www.jan-grosser.de/art/124_dont-be-evil.html
+
+ErrorDocument 401 /4xx_sorry.html
+ErrorDocument 403 /4xx_sorry.html
+ErrorDocument 404 /4xx_sorry.html
