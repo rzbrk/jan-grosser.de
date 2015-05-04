@@ -117,12 +117,19 @@
     margin-top: 0px;
     margin-bottom: 0px }
 
-  article p.art_info, p.art_tags {
+  article p.art_info {
+    font-size: 90%;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid grey }
+
+  article p.art_tags {
     font-size: 90%;
     margin-top: 0px;
     margin-bottom: 0px }
 
-  article hr {
+ article hr {
     color: grey;
     height: 1px }
 
